@@ -13,5 +13,16 @@ Example #1: Found this device in my firewall.
   Config Status: cfg=new, avail=yes, need=no, active=unknown
 
 Problem #2: Started digging through the hardware inventory of afforementioned firewall and found a company name that caught my attenttion. The company seems to specialize in wireless hardware using cellular or wifi signals. This is very curious since my firewall is a completely wired device. There is bluetooth connectivity to reach it, but that is supplied by a dongle and the dongle was removed during the hardware inventory. I find the company on Linked-In and when I go to the page the company has listed for itself, the page turns out to be an Indonesian Gambling site that doesn't provide a certificate. So, I can assume that my DNS is compromised, but I'm running my own DNS servers and they are setup to use DNSSEC and only allow secure updates. I am running AD on my domain and even have a subscription to Microsoft Defender for Cloud.
+  P: /devices/platform/INT0002:00
+  L: 0
+  E: DEVPATH=/devices/platform/INT0002:00
+  E: SUBSYSTEM=platform
+  E: DRIVER=INT0002 Virtual GPIO
+  E: MODALIAS=acpi:INT0002:INT0002:
+  E: USEC_INITIALIZED=10294033
+  E: ID_VENDOR_FROM_DATABASE=Interphase Corporation
+  E: ID_PATH=platform-INT0002:00
+  E: ID_PATH_TAG=platform-INT0002_00
+
 
 Using Shodan to look up owner of the servers, the trial ends at Cloudflare. It's always Cloudflare. Or RealTek.
